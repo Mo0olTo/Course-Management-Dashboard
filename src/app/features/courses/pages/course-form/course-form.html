@@ -143,6 +143,12 @@
                      Duration is required.
                    </p>
                  }
+                 @if(courseForm.controls.duration.touched &&
+                      courseForm.controls.duration.errors?.['min']){
+                    <p class="mt-1 text-sm text-red-500">
+                      Duration must be greater than 0.
+                    </p>
+                  }
                </div>
      
                <!-- Price -->
@@ -159,11 +165,17 @@
                  />
      
                  @if(courseForm.controls.price.touched &&
-                 courseForm.controls.price.errors?.['required']){
-                   <p class="mt-1 text-sm text-red-500">
-                     Price is required.
-                   </p>
-                 }
+                    courseForm.controls.price.errors?.['required']){
+                      <p class="mt-1 text-sm text-red-500">
+                        Price is required.
+                      </p>
+                    }
+                 @if(courseForm.controls.price.touched &&
+                        courseForm.controls.price.errors?.['min']){
+                      <p class="mt-1 text-sm text-red-500">
+                        Price cannot be negative.
+                      </p>
+                    }
                </div>
      
              </div>

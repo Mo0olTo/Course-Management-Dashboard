@@ -1,2 +1,16 @@
 @import "tailwindcss";
-@import "primeicons/primeicons.css";
+@import "primeicons/primeicons.css"; 
+
+
+
+
+@media screen and (max-width: 768px) {
+  .p-toast {
+    width: calc(100vw - 2rem) !important;
+    max-width: 100% !important;
+  }
+
+  .p-toast-top-right {
+    right: 1rem !important;
+    left: 1rem !important;
+  }}
