@@ -9,6 +9,7 @@ import { MessageService } from 'primeng/api';
 import { ReusableTable } from "../../../../shared/components/reusable-table/reusable-table";
 import { ColumnType } from '../../../../shared/enums/column.type';
 import { Loading } from "../../../../shared/components/loading/loading";
+import { Course } from '../../models/course';
 
 @Component({
   selector: 'app-courses-list',
@@ -81,6 +82,7 @@ export class CoursesList implements OnInit {
 
 
   showConfirm = signal<boolean>(false);
+  selectedCourse = signal<Course | null>(null);
   selectedCourseId=signal<string | null >(null);
   selectedStatus = signal<CourseStatus | 'All'>('All');
   
@@ -201,22 +203,27 @@ export class CoursesList implements OnInit {
   } 
 
   deleteCourse(id:string){
-    this.selectedCourseId.set(id);
+    const course = this.courses().find(c => c.id === id);
+
+    if (!course) return;
+  
+    this.selectedCourse.set(course);
     this.showConfirm.set(true);
   } 
   onConfirmDelete() {
-    const id = this.selectedCourseId();
+    const course = this.selectedCourse();
 
-    if (!id) return;
+    if (!course) return;
   
-    this.FACADE.deleteCourse(id);
+    this.FACADE.deleteCourse(course.id);
   
     this.showConfirm.set(false);
-    this.selectedCourseId.set(null);
+    this.selectedCourse.set(null);
+  
     this.messageService.add({
       severity: 'success',
       summary: 'Deleted',
-      detail: 'Course deleted successfully'
+      detail: `${course.courseName} deleted successfully`
     });
   }
   

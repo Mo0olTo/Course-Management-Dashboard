@@ -146,7 +146,8 @@
           
           @if (showConfirm()) {
             <div class="w-full fixed flex justify-center items-center  inset-0">
-              <app-confirmation-dialog
+              <app-confirmation-dialog 
+               [itemName]="selectedCourse()?.courseName ?? ''"
               (confirm)="onConfirmDelete()"
               (cancel)="onCancelDelete()"
               ></app-confirmation-dialog>
