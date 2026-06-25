@@ -1,5 +1,6 @@
-<section class="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950/40 px-4 py-8 sm:px-6 lg:px-10">
-  <div class="mx-auto max-w-7xl">
+<section class="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950/40 px-4 py-8 sm:px-6 lg:px-10">
+  <div class="ambient-orbs" aria-hidden="true"></div>
+  <div class="page-enter relative mx-auto max-w-7xl">
 
     <!-- Header -->
     <header class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
@@ -96,7 +97,7 @@
               <button
               type="button"
               (click)="toggleFilter()"
-              class="flex cursor-pointer items-center gap-1.5 rounded-lg bg-blue-600 px-3 lg:px-5 py-1.5
+              class="btn-press flex cursor-pointer items-center gap-1.5 rounded-lg bg-blue-600 px-3 lg:px-5 py-1.5
                text-sm lg:text-lg font-medium text-white shadow-sm transition hover:bg-blue-500"
             >
               <i class="pi pi-filter"></i>
@@ -117,7 +118,7 @@
 
             </div>
             <div>
-              <button (click)="addNewCourse()" class="flex flex-nowrap whitespace-nowrap cursor-pointer items-center gap-1.5 rounded-lg bg-blue-600 px-3 lg:px-5 py-1.5
+              <button (click)="addNewCourse()" class="btn-press flex flex-nowrap whitespace-nowrap cursor-pointer items-center gap-1.5 rounded-lg bg-blue-600 px-3 lg:px-5 py-1.5
               text-sm lg:text-lg font-medium text-white shadow-sm transition hover:bg-blue-500">
               + Add Course
             </button>

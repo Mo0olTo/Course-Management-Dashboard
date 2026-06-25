@@ -1,13 +1,14 @@
-<section class="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950/40 px-4 py-8 sm:px-6 lg:px-10 ">
+<section class="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950/40 px-4 py-8 sm:px-6 lg:px-10 ">
+  <div class="ambient-orbs" aria-hidden="true"></div>
   @if (loading()) {
-    <div class="mx-auto max-w-4xl w-full">
+    <div class="page-enter mx-auto max-w-4xl w-full">
      <app-loading
      [rows]="6"
      ></app-loading>
     </div>
    }@else {
 
-     <div class="mx-auto max-w-4xl">
+     <div class="page-enter mx-auto max-w-4xl">
 
          <!-- Header -->
          <div class="mb-8">
@@ -202,14 +203,14 @@
              <div class="mt-8 flex justify-end gap-3">
                <button (click)="onCancel()"
                  type="button"
-                 class="rounded-lg border border-slate-700 px-5 py-2.5 font-medium text-slate-200 hover:bg-slate-800"
+                 class="btn-press rounded-lg border border-slate-700 px-5 py-2.5 font-medium text-slate-200 hover:bg-slate-800"
                >
                  Cancel
                </button>
 
                <button
                  type="submit"
-                 class="rounded-lg bg-blue-600 px-5 py-2.5 font-medium text-white hover:bg-blue-500"
+                 class="btn-press rounded-lg bg-blue-600 px-5 py-2.5 font-medium text-white hover:bg-blue-500"
                >
                  {{ isEdit() ? 'Update Course' : 'Create Course' }}
                </button>
