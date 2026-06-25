@@ -1,8 +1,13 @@
 @import "tailwindcss";
-@import "primeicons/primeicons.css"; 
+@import "primeicons/primeicons.css";
 
-
-
+/* Dark-blue theme base — makes any unstyled surface blend in */
+html,
+body {
+  background-color: #020617; /* slate-950 */
+  color: #e2e8f0; /* slate-200 */
+  color-scheme: dark;
+}
 
 @media screen and (max-width: 768px) {
   .p-toast {
@@ -13,4 +18,5 @@
   .p-toast-top-right {
     right: 1rem !important;
     left: 1rem !important;
-  }}
+  }
+}
