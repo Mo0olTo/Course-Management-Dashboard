@@ -1,7 +1,7 @@
 import { Component, input, Input, output, TemplateRef } from '@angular/core';
-import { badgeClass, categoryColor } from '../../utils/table-style.utils';
+import { badgeClass, categoryColor } from '../../../../shared/utils/table-style.utils';
 import { DatePipe } from '@angular/common';
-import { TableColumn } from '../../../features/courses/models/table.column';
+import { TableColumn } from '../../models/table.column';
 
 
 @Component({

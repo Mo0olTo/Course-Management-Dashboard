@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
 
-/* Dark-blue theme base — makes any unstyled surface blend in */
 html,
 body {
   background-color: #020617; /* slate-950 */
@@ -11,9 +10,10 @@ body {
 
 
 
+
 /* Page entrance — fade + slide up */
 .page-enter {
-  animation: page-enter 2180ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: page-enter 1480ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @keyframes page-enter {
@@ -101,6 +101,8 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .page-enter,
+  .lift-card,
   .btn-press,
   .shimmer::after,
   .status-pulse::before { animation: none !important; transition: none !important; }
