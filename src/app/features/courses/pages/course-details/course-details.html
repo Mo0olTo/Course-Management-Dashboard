@@ -1,0 +1,164 @@
+<section class="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50/40 px-4 py-8 sm:px-6 lg:px-10">
+    @if (loading()) {
+       <div class="mx-auto max-w-4xl w-full">
+        <app-loading
+        [rows]="6"
+        ></app-loading>
+       </div>
+      }@else {
+        <div class="mx-auto max-w-4xl">
+
+            <!-- Back button -->
+            <div class="mb-6">
+              <button
+                (click)="goBack()"
+                type="button"
+                class="inline-flex cursor-pointer items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:bg-slate-50 hover:text-indigo-700"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd"/>
+                </svg>
+                Back to Courses
+              </button>
+            </div>
+        
+            <!-- Loading -->
+            @if (loading()) {
+              <div class="flex items-center justify-center rounded-2xl border border-slate-200 bg-white py-20 shadow-sm">
+                <div class="flex flex-col items-center gap-3">
+                  <span class="h-10 w-10 animate-spin rounded-full border-4 border-indigo-200 border-t-indigo-600"></span>
+                  <p class="text-sm text-slate-500">Loading course details…</p>
+                </div>
+              </div>
+            }
+        
+            <!-- Error -->
+            @else if (error()) {
+              <div class="rounded-2xl border border-red-200 bg-red-50 px-6 py-10 text-center shadow-sm">
+                <p class="text-base font-medium text-red-700">{{ error() }}</p>
+                <button
+                  (click)="goBack()"
+                  class="mt-4 inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:bg-slate-50"
+                >
+                  Back to Courses
+                </button>
+              </div>
+            }
+        
+            <!-- Details card -->
+            @else if (course()) {
+              <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        
+                <!-- Header strip -->
+                <div class="border-b border-slate-200 bg-gradient-to-r from-indigo-50/60 via-white to-white px-6 py-6">
+                  <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                    <div class="min-w-0">
+                      <p class="text-xs font-medium uppercase tracking-wider text-indigo-600">Course Details</p>
+                      <h1 class="mt-1 text-2xl font-bold text-slate-900 sm:text-3xl">
+                        {{ course()!.courseName }}
+                      </h1>
+                      <p class="mt-2 text-sm text-slate-500">
+                        Full information about this course.
+                      </p>
+                    </div>
+        
+                    <span
+                      [class]="statusClasses()"
+                      class="inline-flex items-center gap-1.5 self-start rounded-full px-3 lg:px-5 py-1 text-xs lg:text-lg font-semibold sm:self-center"
+                    >
+                      <span class="h-1.5 w-1.5 rounded-full bg-current"></span>
+                      {{ course()!.status }}
+                    </span>
+                  </div>
+                </div>
+        
+                <!-- Fields grid -->
+                <div class="px-6 py-6">
+                  <dl class="grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2">
+        
+                    <!-- Course Name -->
+                    <div class="rounded-xl border border-slate-200 bg-slate-50/40 px-4 py-3">
+                      <dt class="text-xs font-medium uppercase tracking-wider text-slate-500">Course Name</dt>
+                      <dd class="mt-1 text-base font-semibold text-slate-900">{{ course()!.courseName }}</dd>
+                    </div>
+        
+                    <!-- Instructor -->
+                    <div class="rounded-xl border border-slate-200 bg-slate-50/40 px-4 py-3">
+                      <dt class="text-xs font-medium uppercase tracking-wider text-slate-500">Instructor</dt>
+                      <dd class="mt-1 text-base font-semibold text-slate-900">{{ course()!.instructorName }}</dd>
+                    </div>
+        
+                    <!-- Category -->
+                    <div class="rounded-xl border border-slate-200 bg-slate-50/40 px-4 py-3">
+                      <dt class="text-xs font-medium uppercase tracking-wider text-slate-500">Category</dt>
+                      <dd class="mt-1">
+                        <span class="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1 text-sm font-medium text-indigo-700">
+                          {{ course()!.category }}
+                        </span>
+                      </dd>
+                    </div>
+        
+                    <!-- Duration -->
+                    <div class="rounded-xl border border-slate-200 bg-slate-50/40 px-4 py-3">
+                      <dt class="text-xs font-medium uppercase tracking-wider text-slate-500">Duration</dt>
+                      <dd class="mt-1 text-base font-semibold text-slate-900">
+                        {{ course()!.duration }} <span class="text-sm font-normal text-slate-500">hours</span>
+                      </dd>
+                    </div>
+        
+                    <!-- Price -->
+                    <div class="rounded-xl border border-slate-200 bg-slate-50/40 px-4 py-3">
+                      <dt class="text-xs font-medium uppercase tracking-wider text-slate-500">Price</dt>
+                      <dd class="mt-1 text-base font-semibold text-slate-900">
+                        ${{ course()!.price | number:'1.2-2' }}
+                      </dd>
+                    </div>
+        
+                    <!-- Created Date -->
+                    <div class="rounded-xl border border-slate-200 bg-slate-50/40 px-4 py-3">
+                      <dt class="text-xs font-medium uppercase tracking-wider text-slate-500">Created Date</dt>
+                      <dd class="mt-1 text-base font-semibold text-slate-900">
+                        {{ course()!.createdDate | date:'MMM d, y' }}
+                      </dd>
+                    </div>
+                  </dl>
+        
+                  <!-- Description full width -->
+                  <div class="mt-6 rounded-xl border border-slate-200 bg-white px-5 py-4">
+                    <dt class="text-xs font-medium uppercase tracking-wider text-slate-500">Description</dt>
+                    <dd class="mt-2 text-sm leading-relaxed text-slate-700">
+                      @if (course()!.description) {
+                        {{ course()!.description }}
+                      } @else {
+                        <span class="italic text-slate-400">No description provided.</span>
+                      }
+                    </dd>
+                  </div>
+                </div>
+        
+                <!-- Footer actions -->
+                <div class="flex items-center justify-between gap-3 border-t border-slate-200 bg-slate-50/40 px-6 py-4">
+                  <p class="text-xs text-slate-500">
+                    Course ID: <span class="font-mono text-slate-700">{{ course()!.id }}</span>
+                  </p>
+                  <button
+                    (click)="goBack()"
+                    type="button"
+                    class="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-indigo-700"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd"/>
+                    </svg>
+                    Back to Course List
+                  </button>
+                </div>
+        
+              </div>
+            }
+          </div>
+
+      }
+  
+  
+   
+</section>

@@ -1,0 +1,1979 @@
+{
+  "courses": [
+    {
+      "id": "5",
+      "courseName": "Vue.js Fundamentals",
+      "instructorName": "Mohamed Hassan",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 14,
+      "status": "Draft",
+      "description": "add htis to discreption ok little bunny",
+      "createdDate": "2024-04-21T14:40:56.679Z"
+    },
+    {
+      "id": "6",
+      "courseName": "Next.js Full Stack",
+      "instructorName": "Salma Adly",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2025-05-01T00:14:58.671Z"
+    },
+    {
+      "id": "7",
+      "courseName": "JavaScript Essentials",
+      "instructorName": "Ahmed Ali",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Draft",
+      "createdDate": "2024-09-14T06:46:38.786Z"
+    },
+    {
+      "id": "8",
+      "courseName": "Responsive Web Design",
+      "instructorName": "Adel Magdy",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "createdDate": "2024-11-21T22:44:42.832Z"
+    },
+    {
+      "id": "9",
+      "courseName": "React from Zero to Hero",
+      "instructorName": "Yasmin Rafiq",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "description": "All this is from test ",
+      "createdDate": "2025-12-26T08:34:39.656Z"
+    },
+    {
+      "id": "10",
+      "courseName": "HTML & CSS Mastery",
+      "instructorName": "Dina Fawzy",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "createdDate": "2026-05-16T00:23:30.624Z"
+    },
+    {
+      "id": "11",
+      "courseName": "Bootstrap 5 Complete",
+      "instructorName": "Yasmin Rafiq",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "createdDate": "2024-06-26T02:25:15.120Z"
+    },
+    {
+      "id": "12",
+      "courseName": "Webpack & Build Tools",
+      "instructorName": "Salma Adly",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Draft",
+      "createdDate": "2026-02-07T14:16:35.290Z"
+    },
+    {
+      "id": "13",
+      "courseName": "CSS Grid & Flexbox",
+      "instructorName": "Ramy Essam",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "createdDate": "2024-11-15T09:23:24.627Z"
+    },
+    {
+      "id": "14",
+      "courseName": "Redux State Management",
+      "instructorName": "Amir Tarek",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Draft",
+      "createdDate": "2025-06-21T04:55:26.535Z"
+    },
+    {
+      "id": "15",
+      "courseName": "Tailwind CSS Bootcamp",
+      "instructorName": "Salma Adly",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2024-09-23T19:44:17.683Z"
+    },
+    {
+      "id": "16",
+      "courseName": "Web Performance Optimization",
+      "instructorName": "Nihal Atef",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2024-05-31T02:29:34.695Z"
+    },
+    {
+      "id": "17",
+      "courseName": "Angular Complete Guide",
+      "instructorName": "Mohamed Hassan",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2024-11-15T01:01:51.908Z"
+    },
+    {
+      "id": "18",
+      "courseName": "Backend Security Best Practices",
+      "instructorName": "Yasmin Rafiq",
+      "category": "Backend",
+      "duration": 30,
+      "price": 149,
+      "status": "Draft",
+      "createdDate": "2026-03-20T09:41:29.523Z"
+    },
+    {
+      "id": "19",
+      "courseName": "NestJS Complete Guide",
+      "instructorName": "Nadia Galal",
+      "category": "Backend",
+      "duration": 30,
+      "price": 149,
+      "status": "Archived",
+      "createdDate": "2024-04-18T22:27:46.652Z"
+    },
+    {
+      "id": "29",
+      "courseName": "Spring Boot Masterclass",
+      "instructorName": "Youssef Ibrahim",
+      "category": "Backend",
+      "duration": 30,
+      "price": 149,
+      "status": "Draft",
+      "createdDate": "2025-07-12T16:55:09.041Z"
+    },
+    {
+      "id": "30",
+      "courseName": "PHP Laravel Framework",
+      "instructorName": "Mariam Hani",
+      "category": "Backend",
+      "duration": 30,
+      "price": 149,
+      "status": "Active",
+      "createdDate": "2024-08-02T11:12:23.240Z"
+    },
+    {
+      "id": "31",
+      "courseName": "Microservices Architecture",
+      "instructorName": "Mariam Hani",
+      "category": "Backend",
+      "duration": 30,
+      "price": 149,
+      "status": "Archived",
+      "createdDate": "2025-11-05T06:10:07.425Z"
+    },
+    {
+      "id": "32",
+      "courseName": "Redis Caching Strategies",
+      "instructorName": "Tariq Saeed",
+      "category": "Backend",
+      "duration": 30,
+      "price": 149,
+      "status": "Draft",
+      "createdDate": "2025-04-29T02:12:37.560Z"
+    },
+    {
+      "id": "33",
+      "courseName": "MongoDB for Developers",
+      "instructorName": "Khaled Mahmoud",
+      "category": "Backend",
+      "duration": 30,
+      "price": 149,
+      "status": "Active",
+      "createdDate": "2024-06-14T14:59:13.915Z"
+    },
+    {
+      "id": "34",
+      "courseName": "FastAPI with Python",
+      "instructorName": "Samir Bassem",
+      "category": "Backend",
+      "duration": 30,
+      "price": 149,
+      "status": "Draft",
+      "createdDate": "2025-05-28T03:10:54.456Z"
+    },
+    {
+      "id": "35",
+      "courseName": "Motion Design with AE",
+      "instructorName": "Hossam Wael",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Archived",
+      "createdDate": "2024-02-06T14:40:51.462Z"
+    },
+    {
+      "id": "36",
+      "courseName": "Interaction Design Patterns",
+      "instructorName": "Youssef Ibrahim",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Archived",
+      "createdDate": "2024-03-23T00:57:48.583Z"
+    },
+    {
+      "id": "37",
+      "courseName": "User Research Methods",
+      "instructorName": "Nour Ehab",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Archived",
+      "createdDate": "2025-01-04T15:48:23.087Z"
+    },
+    {
+      "id": "38",
+      "courseName": "Prototyping & Wireframing",
+      "instructorName": "Karim Adel",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Draft",
+      "createdDate": "2025-05-28T18:42:10.538Z"
+    },
+    {
+      "id": "39",
+      "courseName": "Adobe XD Masterclass",
+      "instructorName": "Nadia Waheed",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Active",
+      "createdDate": "2026-03-26T18:19:30.443Z"
+    },
+    {
+      "id": "40",
+      "courseName": "Color Theory for Designers",
+      "instructorName": "Khaled Mahmoud",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Archived",
+      "createdDate": "2024-11-07T01:30:21.631Z"
+    },
+    {
+      "id": "41",
+      "courseName": "UI/UX Design Principles",
+      "instructorName": "Heba Lotfy",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Draft",
+      "createdDate": "2025-04-02T10:02:31.942Z"
+    },
+    {
+      "id": "42",
+      "courseName": "Brand Identity Design",
+      "instructorName": "Hamza Yusuf",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Draft",
+      "createdDate": "2025-08-12T03:32:42.883Z"
+    },
+    {
+      "id": "43",
+      "courseName": "Design Systems Creation",
+      "instructorName": "Karim Adel",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Active",
+      "createdDate": "2026-01-28T18:23:49.915Z"
+    },
+    {
+      "id": "44",
+      "courseName": "Mobile App UI Design",
+      "instructorName": "Ramy Essam",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Active",
+      "createdDate": "2025-04-07T11:28:27.740Z"
+    },
+    {
+      "id": "45",
+      "courseName": "Sketch for UI Design",
+      "instructorName": "Salma Adly",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Archived",
+      "createdDate": "2025-12-26T12:50:35.734Z"
+    },
+    {
+      "id": "46",
+      "courseName": "Figma Complete Course",
+      "instructorName": "Nadia Waheed",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Archived",
+      "createdDate": "2024-08-01T10:51:30.583Z"
+    },
+    {
+      "id": "47",
+      "courseName": "Adobe Illustrator Basics",
+      "instructorName": "Faris Salah",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Draft",
+      "createdDate": "2024-09-18T07:48:55.559Z"
+    },
+    {
+      "id": "48",
+      "courseName": "Dashboard UI Design",
+      "instructorName": "Karim Adel",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Archived",
+      "createdDate": "2024-10-13T11:26:50.978Z"
+    },
+    {
+      "id": "49",
+      "courseName": "Typography Fundamentals",
+      "instructorName": "Rana Helmy",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Archived",
+      "createdDate": "2026-06-19T14:13:47.113Z"
+    },
+    {
+      "id": "50",
+      "courseName": "Adobe Illustrator Basics",
+      "instructorName": "Mahmoud Sherif",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Active",
+      "createdDate": "2026-01-16T21:45:21.290Z"
+    },
+    {
+      "id": "51",
+      "courseName": "Sketch for UI Design",
+      "instructorName": "Nadia Galal",
+      "category": "Design",
+      "duration": 15,
+      "price": 79,
+      "status": "Archived",
+      "createdDate": "2024-06-19T04:58:59.608Z"
+    },
+    {
+      "id": "52",
+      "courseName": "App Store Optimization",
+      "instructorName": "Khaled Mahmoud",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Archived",
+      "createdDate": "2024-05-18T11:30:33.050Z"
+    },
+    {
+      "id": "53",
+      "courseName": "iOS Development with Swift",
+      "instructorName": "Doaa Magdi",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Draft",
+      "createdDate": "2024-10-31T21:45:38.922Z"
+    },
+    {
+      "id": "54",
+      "courseName": "Firebase for Mobile Apps",
+      "instructorName": "Salma Adly",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Draft",
+      "createdDate": "2024-04-18T16:30:37.396Z"
+    },
+    {
+      "id": "55",
+      "courseName": "React Native from Scratch",
+      "instructorName": "Walid Tamer",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Active",
+      "createdDate": "2025-07-28T04:52:08.189Z"
+    },
+    {
+      "id": "56",
+      "courseName": "Mobile App Testing",
+      "instructorName": "Hana Zaki",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Active",
+      "createdDate": "2025-07-19T08:31:47.937Z"
+    },
+    {
+      "id": "57",
+      "courseName": "Ionic Framework Basics",
+      "instructorName": "Mostafa Gamal",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Active",
+      "createdDate": "2024-02-12T10:22:16.226Z"
+    },
+    {
+      "id": "58",
+      "courseName": "Flutter Complete Course",
+      "instructorName": "Nihal Atef",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Archived",
+      "createdDate": "2025-05-04T02:28:26.206Z"
+    },
+    {
+      "id": "59",
+      "courseName": "Android with Kotlin",
+      "instructorName": "Omar Khalid",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Active",
+      "createdDate": "2025-05-08T04:21:18.002Z"
+    },
+    {
+      "id": "60",
+      "courseName": "Mobile UI/UX Design",
+      "instructorName": "Samir Bassem",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Archived",
+      "createdDate": "2026-04-15T00:20:21.565Z"
+    },
+    {
+      "id": "61",
+      "courseName": "Push Notifications Integration",
+      "instructorName": "Samir Bassem",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Active",
+      "createdDate": "2024-11-21T09:18:06.815Z"
+    },
+    {
+      "id": "62",
+      "courseName": "Cross-Platform App Development",
+      "instructorName": "Heba Lotfy",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Archived",
+      "createdDate": "2024-09-02T11:37:51.907Z"
+    },
+    {
+      "id": "63",
+      "courseName": "AR in Mobile with ARKit",
+      "instructorName": "Amr Farouk",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Draft",
+      "createdDate": "2025-10-21T05:11:11.428Z"
+    },
+    {
+      "id": "64",
+      "courseName": "Xamarin Development",
+      "instructorName": "Hazem Fouad",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Archived",
+      "createdDate": "2025-06-10T04:42:38.976Z"
+    },
+    {
+      "id": "65",
+      "courseName": "Offline-First Mobile Apps",
+      "instructorName": "Nihal Atef",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Archived",
+      "createdDate": "2025-06-08T21:34:47.554Z"
+    },
+    {
+      "id": "66",
+      "courseName": "Mobile Security Best Practices",
+      "instructorName": "Mohamed Hassan",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Active",
+      "createdDate": "2024-07-20T17:17:34.521Z"
+    },
+    {
+      "id": "67",
+      "courseName": "Cross-Platform App Development",
+      "instructorName": "Omar Khalid",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Archived",
+      "createdDate": "2025-04-01T17:50:44.141Z"
+    },
+    {
+      "id": "68",
+      "courseName": "Mobile App Testing",
+      "instructorName": "Rania Fathi",
+      "category": "Mobile",
+      "duration": 25,
+      "price": 129,
+      "status": "Active",
+      "createdDate": "2024-01-15T23:24:17.680Z"
+    },
+    {
+      "id": "69",
+      "courseName": "Computer Vision with OpenCV",
+      "instructorName": "Mariam Hani",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Archived",
+      "createdDate": "2024-02-14T12:46:23.712Z"
+    },
+    {
+      "id": "70",
+      "courseName": "Time Series Forecasting",
+      "instructorName": "Mohamed Hassan",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-09-07T10:31:33.878Z"
+    },
+    {
+      "id": "71",
+      "courseName": "PyTorch for Deep Learning",
+      "instructorName": "Fatima Nour",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2026-05-11T07:59:38.831Z"
+    },
+    {
+      "id": "72",
+      "courseName": "TensorFlow & Keras",
+      "instructorName": "Omar Khalid",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-09-23T18:45:28.314Z"
+    },
+    {
+      "id": "73",
+      "courseName": "Scikit-Learn Masterclass",
+      "instructorName": "Ziad Hossam",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2024-10-06T11:50:02.718Z"
+    },
+    {
+      "id": "74",
+      "courseName": "Natural Language Processing",
+      "instructorName": "Omar Khalid",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-03-05T01:00:04.304Z"
+    },
+    {
+      "id": "75",
+      "courseName": "Recommendation Systems",
+      "instructorName": "Laith Sameer",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2024-01-06T18:21:37.703Z"
+    },
+    {
+      "id": "76",
+      "courseName": "Machine Learning with Python",
+      "instructorName": "Laith Sameer",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-03-23T01:39:20.647Z"
+    },
+    {
+      "id": "77",
+      "courseName": "Reinforcement Learning",
+      "instructorName": "Yasmin Rafiq",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2025-01-21T05:04:32.758Z"
+    },
+    {
+      "id": "78",
+      "courseName": "MLOps Fundamentals",
+      "instructorName": "Amr Farouk",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2025-11-01T23:25:18.467Z"
+    },
+    {
+      "id": "79",
+      "courseName": "Neural Networks A-Z",
+      "instructorName": "Hazem Fouad",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2025-10-14T15:18:44.050Z"
+    },
+    {
+      "id": "80",
+      "courseName": "Deep Learning Fundamentals",
+      "instructorName": "Ghada Rizk",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-06-20T07:28:03.440Z"
+    },
+    {
+      "id": "81",
+      "courseName": "Feature Engineering Techniques",
+      "instructorName": "Hamza Yusuf",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2025-12-18T07:27:53.519Z"
+    },
+    {
+      "id": "82",
+      "courseName": "Transfer Learning Techniques",
+      "instructorName": "Layla Mansour",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-03-26T20:06:32.168Z"
+    },
+    {
+      "id": "83",
+      "courseName": "Generative AI Basics",
+      "instructorName": "Nadia Waheed",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2026-01-31T01:19:37.811Z"
+    },
+    {
+      "id": "84",
+      "courseName": "Generative AI Basics",
+      "instructorName": "Hazem Fouad",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2024-05-20T17:42:25.209Z"
+    },
+    {
+      "id": "85",
+      "courseName": "Neural Networks A-Z",
+      "instructorName": "Mariam Hani",
+      "category": "Machine Learning",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-04-26T14:05:14.573Z"
+    },
+    {
+      "id": "86",
+      "courseName": "A/B Testing Fundamentals",
+      "instructorName": "Layla Mansour",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Active",
+      "createdDate": "2024-03-29T09:44:52.137Z"
+    },
+    {
+      "id": "87",
+      "courseName": "Statistics for Data Science",
+      "instructorName": "Samir Bassem",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2024-05-15T12:32:38.810Z"
+    },
+    {
+      "id": "88",
+      "courseName": "Power BI Complete Guide",
+      "instructorName": "Nader Emad",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2025-11-12T12:26:15.554Z"
+    },
+    {
+      "id": "89",
+      "courseName": "Excel for Data Analysts",
+      "instructorName": "Hamza Yusuf",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2025-12-28T15:41:29.857Z"
+    },
+    {
+      "id": "90",
+      "courseName": "Data Analysis with Pandas",
+      "instructorName": "Samer Osama",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2024-07-13T19:02:10.538Z"
+    },
+    {
+      "id": "91",
+      "courseName": "Data Visualization with Matplotlib",
+      "instructorName": "Walid Tamer",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2025-03-15T01:46:04.670Z"
+    },
+    {
+      "id": "92",
+      "courseName": "SQL for Data Analysis",
+      "instructorName": "Hala Mustafa",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2026-03-26T14:04:00.822Z"
+    },
+    {
+      "id": "93",
+      "courseName": "Google Analytics Mastery",
+      "instructorName": "Hala Mustafa",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2025-06-27T18:29:05.974Z"
+    },
+    {
+      "id": "94",
+      "courseName": "Tableau for Business Intelligence",
+      "instructorName": "Hamza Yusuf",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2024-06-25T14:15:06.678Z"
+    },
+    {
+      "id": "95",
+      "courseName": "Looker Studio Basics",
+      "instructorName": "Ahmed Ali",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2024-05-01T02:28:19.932Z"
+    },
+    {
+      "id": "96",
+      "courseName": "Data Cleaning Techniques",
+      "instructorName": "Rana Helmy",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2026-05-17T17:37:15.934Z"
+    },
+    {
+      "id": "97",
+      "courseName": "Data Storytelling Skills",
+      "instructorName": "Fatima Nour",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2024-10-12T21:15:01.160Z"
+    },
+    {
+      "id": "98",
+      "courseName": "R Programming for Data Analysis",
+      "instructorName": "Karim Adel",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2024-09-24T17:11:03.726Z"
+    },
+    {
+      "id": "99",
+      "courseName": "Exploratory Data Analysis",
+      "instructorName": "Samar Aziz",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2025-08-13T09:03:13.241Z"
+    },
+    {
+      "id": "100",
+      "courseName": "Business Intelligence with SSRS",
+      "instructorName": "Hossam Wael",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2025-07-27T19:46:07.547Z"
+    },
+    {
+      "id": "101",
+      "courseName": "Exploratory Data Analysis",
+      "instructorName": "Nader Emad",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Active",
+      "createdDate": "2025-07-26T13:52:38.580Z"
+    },
+    {
+      "id": "102",
+      "courseName": "Business Intelligence with SSRS",
+      "instructorName": "Eman Khalil",
+      "category": " Data Analysis",
+      "duration": 40,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2024-09-03T07:48:59.549Z"
+    },
+    {
+      "id": "103",
+      "courseName": "GitLab CI/CD Pipeline",
+      "instructorName": "Tariq Saeed",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2024-04-30T16:53:24.075Z"
+    },
+    {
+      "id": "104",
+      "courseName": "Docker Fundamentals",
+      "instructorName": "Rania Fathi",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2024-03-09T03:30:38.876Z"
+    },
+    {
+      "id": "105",
+      "courseName": "Monitoring with Prometheus",
+      "instructorName": "Layla Mansour",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2026-01-15T00:17:27.339Z"
+    },
+    {
+      "id": "106",
+      "courseName": "DevOps Culture & Practices",
+      "instructorName": "Reem Talaat",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2024-05-12T19:39:46.451Z"
+    },
+    {
+      "id": "107",
+      "courseName": "Ansible for Automation",
+      "instructorName": "Sara Wael",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2025-12-27T22:28:22.063Z"
+    },
+    {
+      "id": "108",
+      "courseName": "Linux Administration Basics",
+      "instructorName": "Mohamed Hassan",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2026-06-10T05:26:24.338Z"
+    },
+    {
+      "id": "109",
+      "courseName": "Terraform Infrastructure as Code",
+      "instructorName": "Hana Zaki",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2025-08-13T12:03:07.607Z"
+    },
+    {
+      "id": "110",
+      "courseName": "Shell Scripting for DevOps",
+      "instructorName": "Walid Tamer",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2024-05-12T12:24:50.625Z"
+    },
+    {
+      "id": "111",
+      "courseName": "Chef & Puppet Basics",
+      "instructorName": "Mohamed Hassan",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2026-05-03T02:47:03.564Z"
+    },
+    {
+      "id": "112",
+      "courseName": "GitHub Actions Automation",
+      "instructorName": "Amr Farouk",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2025-11-01T17:15:33.069Z"
+    },
+    {
+      "id": "113",
+      "courseName": "Site Reliability Engineering",
+      "instructorName": "Nihal Atef",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2024-07-23T09:51:44.494Z"
+    },
+    {
+      "id": "114",
+      "courseName": "Vagrant & Virtual Machines",
+      "instructorName": "Samir Bassem",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2025-04-01T17:24:28.889Z"
+    },
+    {
+      "id": "115",
+      "courseName": "Kubernetes Complete Guide",
+      "instructorName": "Yasmin Rafiq",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2025-07-19T17:22:44.273Z"
+    },
+    {
+      "id": "116",
+      "courseName": "CI/CD with Jenkins",
+      "instructorName": "Ziad Hossam",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2024-02-21T01:23:44.508Z"
+    },
+    {
+      "id": "117",
+      "courseName": "Nginx Web Server Mastery",
+      "instructorName": "Mariam Hani",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2026-06-23T04:24:53.933Z"
+    },
+    {
+      "id": "118",
+      "courseName": "GitHub Actions Automation",
+      "instructorName": "Khaled Mahmoud",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2026-06-10T15:02:21.904Z"
+    },
+    {
+      "id": "119",
+      "courseName": "Nginx Web Server Mastery",
+      "instructorName": "Nihal Atef",
+      "category": "DevOps",
+      "duration": 45,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2025-07-09T10:35:56.743Z"
+    },
+    {
+      "id": "120",
+      "courseName": "Cloud Cost Optimization",
+      "instructorName": "Layla Mansour",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2024-06-14T14:38:16.495Z"
+    },
+    {
+      "id": "121",
+      "courseName": "Hybrid Cloud Architecture",
+      "instructorName": "Eman Khalil",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2025-05-22T20:28:53.300Z"
+    },
+    {
+      "id": "122",
+      "courseName": "Google Cloud Platform",
+      "instructorName": "Hala Mustafa",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2025-09-02T02:23:07.562Z"
+    },
+    {
+      "id": "123",
+      "courseName": "Cloud Migration Planning",
+      "instructorName": "Karim Adel",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2025-11-10T01:16:24.329Z"
+    },
+    {
+      "id": "124",
+      "courseName": "GCP Data Engineering",
+      "instructorName": "Ziad Hossam",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2024-10-28T09:50:57.613Z"
+    },
+    {
+      "id": "125",
+      "courseName": "Multi-Cloud Strategy",
+      "instructorName": "Nadia Waheed",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2024-03-05T21:25:23.651Z"
+    },
+    {
+      "id": "126",
+      "courseName": "Cloud Networking Basics",
+      "instructorName": "Khaled Mahmoud",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2024-09-19T08:30:49.759Z"
+    },
+    {
+      "id": "127",
+      "courseName": "Microsoft Azure Fundamentals",
+      "instructorName": "Nihal Atef",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2024-11-22T02:58:39.639Z"
+    },
+    {
+      "id": "128",
+      "courseName": "Azure Active Directory",
+      "instructorName": "Lina Badr",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2025-10-18T04:31:33.072Z"
+    },
+    {
+      "id": "129",
+      "courseName": "AWS Database Services",
+      "instructorName": "Mahmoud Sherif",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2024-03-28T04:29:45.978Z"
+    },
+    {
+      "id": "130",
+      "courseName": "Serverless with AWS Lambda",
+      "instructorName": "Samar Aziz",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2024-09-28T13:13:48.147Z"
+    },
+    {
+      "id": "131",
+      "courseName": "Azure DevOps Services",
+      "instructorName": "Khaled Mahmoud",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2024-06-05T13:26:40.395Z"
+    },
+    {
+      "id": "132",
+      "courseName": "CloudFormation Templates",
+      "instructorName": "Hana Zaki",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2026-04-15T17:12:03.409Z"
+    },
+    {
+      "id": "133",
+      "courseName": "Cloud Security Essentials",
+      "instructorName": "Adel Magdy",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Active",
+      "createdDate": "2025-04-08T08:30:43.400Z"
+    },
+    {
+      "id": "134",
+      "courseName": "AWS Solutions Architect",
+      "instructorName": "Nadia Galal",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2025-01-29T12:18:32.013Z"
+    },
+    {
+      "id": "135",
+      "courseName": "CloudFormation Templates",
+      "instructorName": "Mahmoud Sherif",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Archived",
+      "createdDate": "2024-05-02T12:04:11.361Z"
+    },
+    {
+      "id": "136",
+      "courseName": "Microsoft Azure Fundamentals",
+      "instructorName": "Hala Mustafa",
+      "category": "Cloud Computing",
+      "duration": 40,
+      "price": 249,
+      "status": "Draft",
+      "createdDate": "2025-07-19T23:21:00.803Z"
+    },
+    {
+      "id": "137",
+      "courseName": "Cloud Security Architecture",
+      "instructorName": "Ghada Rizk",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Archived",
+      "createdDate": "2024-09-04T06:05:12.785Z"
+    },
+    {
+      "id": "138",
+      "courseName": "OWASP Top 10 Deep Dive",
+      "instructorName": "Mariam Hani",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2025-01-03T16:03:08.113Z"
+    },
+    {
+      "id": "139",
+      "courseName": "Network Security Fundamentals",
+      "instructorName": "Samir Bassem",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Archived",
+      "createdDate": "2024-07-14T22:14:14.139Z"
+    },
+    {
+      "id": "140",
+      "courseName": "Digital Forensics Introduction",
+      "instructorName": "Samar Aziz",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2025-03-31T11:38:40.512Z"
+    },
+    {
+      "id": "141",
+      "courseName": "CompTIA Security+ Prep",
+      "instructorName": "Dina Fawzy",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2025-02-02T20:57:19.516Z"
+    },
+    {
+      "id": "142",
+      "courseName": "Risk Management Frameworks",
+      "instructorName": "Nader Emad",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Archived",
+      "createdDate": "2024-02-24T00:27:58.772Z"
+    },
+    {
+      "id": "143",
+      "courseName": "Zero Trust Security Model",
+      "instructorName": "Hossam Wael",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-05-18T07:09:37.683Z"
+    },
+    {
+      "id": "144",
+      "courseName": "Penetration Testing",
+      "instructorName": "Doaa Magdi",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Archived",
+      "createdDate": "2024-02-06T17:48:39.981Z"
+    },
+    {
+      "id": "145",
+      "courseName": "Ethical Hacking Complete",
+      "instructorName": "Omar Khalid",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-06-13T22:02:30.480Z"
+    },
+    {
+      "id": "146",
+      "courseName": "Security Operations Center",
+      "instructorName": "Mona Sobhy",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-12-16T08:23:46.433Z"
+    },
+    {
+      "id": "147",
+      "courseName": "Identity & Access Management",
+      "instructorName": "Samir Bassem",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-09-11T04:26:20.401Z"
+    },
+    {
+      "id": "148",
+      "courseName": "Malware Analysis Basics",
+      "instructorName": "Eman Khalil",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2025-02-17T17:53:46.785Z"
+    },
+    {
+      "id": "149",
+      "courseName": "Incident Response Planning",
+      "instructorName": "Mariam Hani",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2025-08-22T12:20:27.084Z"
+    },
+    {
+      "id": "150",
+      "courseName": "Web Application Security",
+      "instructorName": "Samir Bassem",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Archived",
+      "createdDate": "2024-02-12T13:49:20.306Z"
+    },
+    {
+      "id": "151",
+      "courseName": "Cryptography Essentials",
+      "instructorName": "Amr Farouk",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Draft",
+      "createdDate": "2026-05-09T05:27:15.756Z"
+    },
+    {
+      "id": "152",
+      "courseName": "Zero Trust Security Model",
+      "instructorName": "Nader Emad",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2025-07-18T09:43:29.905Z"
+    },
+    {
+      "id": "153",
+      "courseName": "CompTIA Security+ Prep",
+      "instructorName": "Hamza Yusuf",
+      "category": "Cybersecurity",
+      "duration": 50,
+      "price": 299,
+      "status": "Active",
+      "createdDate": "2024-05-07T15:47:06.797Z"
+    },
+    {
+      "id": "154",
+      "courseName": "Test Automation with Cypress",
+      "instructorName": "Yasmin Rafiq",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "createdDate": "2024-12-27T13:54:04.693Z"
+    },
+    {
+      "id": "155",
+      "courseName": "Performance Testing with JMeter",
+      "instructorName": "Mohamed Hassan",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Draft",
+      "createdDate": "2026-02-05T13:22:18.332Z"
+    },
+    {
+      "id": "156",
+      "courseName": "Load Testing Strategies",
+      "instructorName": "Heba Lotfy",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2026-03-27T11:01:19.761Z"
+    },
+    {
+      "id": "157",
+      "courseName": "Exploratory Testing Techniques",
+      "instructorName": "Mohamed Hassan",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "createdDate": "2025-05-21T08:51:04.498Z"
+    },
+    {
+      "id": "158",
+      "courseName": "Selenium WebDriver Course",
+      "instructorName": "Samir Bassem",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2025-08-03T07:57:58.433Z"
+    },
+    {
+      "id": "159",
+      "courseName": "Database Testing Methods",
+      "instructorName": "Bilal Nasser",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2024-04-05T14:38:54.492Z"
+    },
+    {
+      "id": "160",
+      "courseName": "Manual Testing Fundamentals",
+      "instructorName": "Samar Aziz",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Draft",
+      "createdDate": "2026-05-31T11:51:56.868Z"
+    },
+    {
+      "id": "161",
+      "courseName": "BDD with Cucumber",
+      "instructorName": "Ziad Hossam",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "createdDate": "2024-02-29T21:59:02.532Z"
+    },
+    {
+      "id": "162",
+      "courseName": "ISTQB Foundation Prep",
+      "instructorName": "Lina Badr",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "createdDate": "2025-10-01T13:24:38.281Z"
+    },
+    {
+      "id": "163",
+      "courseName": "Mobile App Testing Guide",
+      "instructorName": "Fatima Nour",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Draft",
+      "createdDate": "2025-02-03T13:19:33.188Z"
+    },
+    {
+      "id": "164",
+      "courseName": "Test-Driven Development",
+      "instructorName": "Mona Sobhy",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2024-12-14T01:00:20.521Z"
+    },
+    {
+      "id": "165",
+      "courseName": "Agile Testing Practices",
+      "instructorName": "Lina Badr",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Draft",
+      "createdDate": "2025-03-12T04:41:52.016Z"
+    },
+    {
+      "id": "166",
+      "courseName": "API Testing with Postman",
+      "instructorName": "Ahmed Ali",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2025-03-17T01:41:18.250Z"
+    },
+    {
+      "id": "167",
+      "courseName": "Continuous Testing in CI/CD",
+      "instructorName": "Amir Tarek",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2024-01-16T03:32:51.138Z"
+    },
+    {
+      "id": "168",
+      "courseName": "Security Testing Basics",
+      "instructorName": "Nadia Galal",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Active",
+      "createdDate": "2026-06-03T15:30:51.812Z"
+    },
+    {
+      "id": "169",
+      "courseName": "Exploratory Testing Techniques",
+      "instructorName": "Jad Ramzi",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2025-02-14T21:04:16.115Z"
+    },
+    {
+      "id": "170",
+      "courseName": "Test-Driven Development",
+      "instructorName": "Hazem Fouad",
+      "category": "Software Testing",
+      "duration": 20,
+      "price": 99,
+      "status": "Archived",
+      "createdDate": "2026-04-11T14:54:55.405Z"
+    },
+    {
+      "id": "171",
+      "courseName": "Blockchain Fundamentals",
+      "instructorName": "Omar Khalid",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Active",
+      "createdDate": "2024-05-02T00:55:10.414Z"
+    },
+    {
+      "id": "172",
+      "courseName": "Tokenomics Design",
+      "instructorName": "Ahmed Ali",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2025-09-08T07:20:39.803Z"
+    },
+    {
+      "id": "173",
+      "courseName": "NFT Development Guide",
+      "instructorName": "Rana Helmy",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2025-10-19T12:00:14.890Z"
+    },
+    {
+      "id": "174",
+      "courseName": "DeFi Protocols Explained",
+      "instructorName": "Jad Ramzi",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2024-03-22T05:53:36.320Z"
+    },
+    {
+      "id": "175",
+      "courseName": "DAO Architecture Design",
+      "instructorName": "Mohamed Hassan",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Active",
+      "createdDate": "2025-09-20T12:27:13.045Z"
+    },
+    {
+      "id": "176",
+      "courseName": "Web3.js & DApp Development",
+      "instructorName": "Karim Adel",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2026-01-24T20:02:10.388Z"
+    },
+    {
+      "id": "177",
+      "courseName": "Blockchain Security",
+      "instructorName": "Karim Adel",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2025-09-07T00:00:41.750Z"
+    },
+    {
+      "id": "179",
+      "courseName": "Polkadot & Substrate",
+      "instructorName": "Mona Sobhy",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2024-09-25T21:46:52.032Z"
+    },
+    {
+      "id": "180",
+      "courseName": "Hyperledger Fabric Basics",
+      "instructorName": "Faris Salah",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2025-06-14T08:08:34.756Z"
+    },
+    {
+      "id": "181",
+      "courseName": "Solana Development Course",
+      "instructorName": "Samer Osama",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2026-05-29T17:20:49.358Z"
+    },
+    {
+      "id": "182",
+      "courseName": "Layer 2 Scaling Solutions",
+      "instructorName": "Mahmoud Sherif",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Archived",
+      "createdDate": "2024-07-15T18:13:28.303Z"
+    },
+    {
+      "id": "183",
+      "courseName": "Smart Contract Development",
+      "instructorName": "Adel Magdy",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2024-11-02T14:16:02.476Z"
+    },
+    {
+      "id": "184",
+      "courseName": "Blockchain for Enterprise",
+      "instructorName": "Ramy Essam",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2025-11-22T08:35:21.339Z"
+    },
+    {
+      "id": "185",
+      "courseName": "Crypto Wallet Development",
+      "instructorName": "Ziad Hossam",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2025-10-08T01:02:05.132Z"
+    },
+    {
+      "id": "186",
+      "courseName": "NFT Development Guide",
+      "instructorName": "Heba Lotfy",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2026-05-03T15:22:47.671Z"
+    },
+    {
+      "id": "187",
+      "courseName": "DeFi Protocols Explained",
+      "instructorName": "Sara Wael",
+      "category": "Blockchain",
+      "duration": 35,
+      "price": 199,
+      "status": "Draft",
+      "createdDate": "2024-01-03T02:14:26.664Z"
+    },
+    {
+      "id": "188",
+      "courseName": "Audio Design for Games",
+      "instructorName": "Aisha Kareem",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Draft",
+      "createdDate": "2024-04-09T12:11:45.283Z"
+    },
+    {
+      "id": "189",
+      "courseName": "Procedural Content Generation",
+      "instructorName": "Adel Magdy",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Archived",
+      "createdDate": "2025-09-24T03:42:48.865Z"
+    },
+    {
+      "id": "190",
+      "courseName": "VR Game Development",
+      "instructorName": "Samir Bassem",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Active",
+      "createdDate": "2025-03-12T02:08:34.746Z"
+    },
+    {
+      "id": "191",
+      "courseName": "Multiplayer Game Networking",
+      "instructorName": "Omar Khalid",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Archived",
+      "createdDate": "2025-12-09T04:10:11.817Z"
+    },
+    {
+      "id": "192",
+      "courseName": "Shader Programming Basics",
+      "instructorName": "Bilal Nasser",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Draft",
+      "createdDate": "2024-12-08T23:28:56.376Z"
+    },
+    {
+      "id": "193",
+      "courseName": "Game AI Programming",
+      "instructorName": "Nadia Galal",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Draft",
+      "createdDate": "2024-10-04T09:06:31.416Z"
+    },
+    {
+      "id": "194",
+      "courseName": "Unity Game Development",
+      "instructorName": "Adel Magdy",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Active",
+      "createdDate": "2025-11-01T16:27:45.331Z"
+    },
+    {
+      "id": "195",
+      "courseName": "Game UI/UX Design",
+      "instructorName": "Hala Mustafa",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Archived",
+      "createdDate": "2024-12-23T15:49:51.648Z"
+    },
+    {
+      "id": "196",
+      "courseName": "2D Game Design with Godot",
+      "instructorName": "Omar Khalid",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Active",
+      "createdDate": "2024-11-02T19:40:50.315Z"
+    },
+    {
+      "id": "197",
+      "courseName": "Unreal Engine Basics",
+      "instructorName": "Mahmoud Sherif",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Archived",
+      "createdDate": "2026-03-26T03:17:48.810Z"
+    },
+    {
+      "id": "198",
+      "courseName": "Mobile Game Development",
+      "instructorName": "Ghada Rizk",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Draft",
+      "createdDate": "2024-04-27T02:11:28.700Z"
+    },
+    {
+      "id": "199",
+      "courseName": "Level Design Principles",
+      "instructorName": "Tariq Saeed",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Draft",
+      "createdDate": "2025-08-16T21:46:59.474Z"
+    },
+    {
+      "id": "200",
+      "courseName": "C# for Game Developers",
+      "instructorName": "Amir Tarek",
+      "category": "Game Development",
+      "duration": 30,
+      "price": 149,
+      "status": "Archived",
+      "createdDate": "2026-03-27T03:44:04.098Z"
+    },
+    {
+      "courseName": "Angular fundementals",
+      "instructorName": "Mostafa Allam",
+      "category": "Frontend",
+      "duration": 32,
+      "price": 1500,
+      "status": "Active",
+      "id": "0UpvvNYa1fI",
+      "createdDate": "2026-06-24T16:06:32.734Z"
+    },
+    {
+      "courseName": "Angular fundementals",
+      "instructorName": "Mostafa Allam",
+      "category": "Frontend",
+      "duration": 32,
+      "price": 1500,
+      "status": "Active",
+      "id": "oMODM96wDs0",
+      "createdDate": "2026-06-24T16:06:33.933Z"
+    },
+    {
+      "courseName": "Angular fundementals",
+      "instructorName": "Mostafa Allam",
+      "category": "Frontend",
+      "duration": 32,
+      "price": 1500,
+      "status": "Active",
+      "id": "UTV7JFlNpRE",
+      "createdDate": "2026-06-24T16:06:41.061Z"
+    },
+    {
+      "courseName": "Angular fundementals",
+      "instructorName": "Mostafa Allam",
+      "category": "Frontend",
+      "duration": 32,
+      "price": 1500,
+      "status": "Active",
+      "id": "5dGqwN9iveQ",
+      "createdDate": "2026-06-24T16:06:44.911Z"
+    },
+    {
+      "courseName": "angular",
+      "instructorName": "mostafa",
+      "category": "Frontend",
+      "duration": 32,
+      "price": 140,
+      "status": "Active",
+      "id": "fRjhxyIfljA",
+      "createdDate": "2026-06-24T16:07:58.185Z"
+    },
+    {
+      "courseName": "JavaScript",
+      "instructorName": "Mansour",
+      "category": "Frontend",
+      "duration": 22,
+      "price": 45,
+      "status": "Active",
+      "id": "M46prlQXrJM",
+      "createdDate": "2026-06-24T16:19:51.315Z"
+    },
+    {
+      "courseName": "HTML",
+      "instructorName": "OMAR BAKR",
+      "category": "Frontend",
+      "duration": 12,
+      "price": 25,
+      "status": "Active",
+      "id": "fyUWmIkbXko",
+      "createdDate": "2026-06-24T16:22:28.085Z"
+    },
+    {
+      "courseName": "Java Script ",
+      "instructorName": "Mamdouh",
+      "category": "Blockchain",
+      "duration": 36,
+      "price": 95,
+      "status": "Archived",
+      "id": "9DAxQlYOHjk",
+      "createdDate": "2026-06-25T08:51:04.513Z"
+    },
+    {
+      "courseName": "Css",
+      "instructorName": "omar sayed ",
+      "category": "Frontend",
+      "duration": 22,
+      "price": 12,
+      "status": "Active",
+      "id": "LxdaT4M74w8",
+      "createdDate": "2026-06-25T08:57:09.244Z"
+    },
+    {
+      "courseName": "asdsad",
+      "instructorName": "sadsad",
+      "category": "Mobile",
+      "duration": 14,
+      "price": 1236,
+      "status": "Draft",
+      "description": "asdakjsdkad ksa das d",
+      "id": "RfkgzoN0vvc",
+      "createdDate": "2026-06-25T08:58:11.125Z"
+    },
+    {
+      "courseName": "Vue.js Fundamentals",
+      "instructorName": "Mohamed Hassan",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 99,
+      "status": "Draft",
+      "description": "add htis to discreption ok little bunny",
+      "id": "6it-gyuJHHU",
+      "createdDate": "2026-06-25T10:21:49.887Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

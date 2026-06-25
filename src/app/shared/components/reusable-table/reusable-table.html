@@ -1,0 +1,129 @@
+<div class="overflow-hidden  rounded-b-2xl border border-slate-200 bg-white shadow-sm">
+    <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-slate-200">
+
+            <thead class="bg-slate-50">
+              <tr>
+          
+                @for (column of columns(); track column.key) {
+                  <th
+                    class="px-5 py-3 text-left text-xs md:text-[16px] font-semibold uppercase"
+                  >
+                    {{ column.header }}
+                  </th>
+                }
+          
+                <th>Actions</th>
+          
+              </tr>
+            </thead>
+          
+            <tbody>
+          
+              @for (row of data(); track row.id) {
+          
+                <tr>
+          
+                  @for (column of columns(); track column.key) {
+          
+                    <td class="px-5 py-4">
+                        @switch (column.type) {
+
+                            @case ('status') {
+                          
+                              <span
+                                class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium"
+                                [class]="badgeClass(row.status)"
+                              >
+                                {{ row[column.key] }}
+                              </span>
+                          
+                            }
+                          
+                            @case ('category') {
+                          
+                              <span
+                                class="inline-flex rounded-md px-2 py-1 text-xs font-medium"
+                                [class]="categoryColor(row.category)"
+                              >
+                                {{ row[column.key] }}
+                              </span>
+                          
+                            }
+                            @case ('date') {
+                          
+                              <span
+                                class="inline-flex rounded-md px-2 py-1 text-xs font-medium"
+                                [class]="categoryColor(row.category)"
+                              >
+                                {{ row[column.key] | date:'dd/MM/yyyy' }}
+                              </span>
+                          
+                            }
+                          
+                            @case ('price') {
+                          
+                              ${{ row[column.key] }}
+                          
+                            }
+                          
+                            @case ('duration') {
+                          
+                              {{ row[column.key] }}h
+                          
+                            }
+                          
+                            @default {
+                          
+                              <span
+                              class="text-sm md:text-[17px] font-[500]  truncate block max-w-32 sm:max-w-none"
+                              [class]="column.key === 'instructorName' ? 'text-black  rounded-md':''"
+                            >
+                              {{ row[column.key] }}
+                            </span>
+                          
+                            }
+                          
+                          }
+                    </td>
+          
+                  }
+          
+                  <td class="px-5 py-4  gap-2">
+          
+                      <div class="flex justify-center items-center gap-2">
+                        <button class="bg-gray-400 hover:bg-gray-600 px-2 py-1 rounded-xl text-white cursor-pointer text-sm"
+                        (click)="view.emit(row.id)"
+                        
+                      >
+                        View
+                      </button>
+            
+                      <button class="bg-indigo-500 hover:bg-indigo-600 px-2 py-1 rounded-xl text-white cursor-pointer text-sm"
+                        (click)="edit.emit(row.id)"
+                        
+                      >
+                        Edit
+                      </button>
+            
+                      <button class="bg-red-500 hover:bg-red-600 px-2 py-1 rounded-xl text-white cursor-pointer text-sm"
+                        (click)="delete.emit(row.id)"
+                      >
+                        Delete
+                      </button>
+                      </div>
+          
+                  </td>
+          
+                </tr> 
+            
+          
+              }
+          
+            </tbody>
+          
+          </table>
+
+        
+    </div>
+  </div>
