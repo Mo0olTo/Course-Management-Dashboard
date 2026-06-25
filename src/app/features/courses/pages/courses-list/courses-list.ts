@@ -10,10 +10,11 @@ import { ReusableTable } from "../../../../shared/components/reusable-table/reus
 import { ColumnType } from '../../../../shared/enums/column.type';
 import { Loading } from "../../../../shared/components/loading/loading";
 import { Course } from '../../models/course';
+import { Error } from "../../../../shared/components/error/error";
 
 @Component({
   selector: 'app-courses-list',
-  imports: [DatePipe, DecimalPipe, TitleCasePipe, FormsModule, ConfirmationDialog, ReusableTable, Loading],
+  imports: [DatePipe, DecimalPipe, TitleCasePipe, FormsModule, ConfirmationDialog, ReusableTable, Loading, Error],
   templateUrl: './courses-list.html',
   styleUrl: './courses-list.scss',
 })

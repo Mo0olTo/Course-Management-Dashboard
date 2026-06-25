@@ -54,20 +54,18 @@
     </div>
 
     <!-- Loading -->
-    @if (loading()) {
-     
+    @if (loading()) { 
          <app-loading
          [rows]="6"
          ></app-loading>
-       
        
     }
 
     <!-- Error -->
     @else if (error()) {
-      <div class="rounded-2xl border border-red-200 bg-red-50 px-6 py-10 text-center shadow-sm">
-        <p class="text-base font-medium text-red-700">{{ error() }}</p>
-      </div>
+      <app-error
+       [message]="error()??''"
+       ></app-error>
     }
 
     <!-- Table card done -->

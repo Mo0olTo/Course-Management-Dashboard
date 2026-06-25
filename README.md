@@ -186,6 +186,18 @@ The mock server reads and writes directly to this file.
 
 ---
 
+## Bonus Features
+
+* Reusable Table Component
+* Reusable Form Components
+* Loading Skeleton
+* Toast Notifications
+* Feature-Based Architecture
+* Angular Signals State Management
+* Typed Reactive Forms
+* Responsive UI Design on (Desktop , Mobile)
+
+---
 
 ## 📸 Screenshots
 
