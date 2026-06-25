@@ -112,22 +112,10 @@ cd Course-Management-Dashboard
 npm install
 ```
 
-### 3. Start the Mock API
-
-```bash
-npm run start-api
-```
-
 ### 4. Start the Angular Application
 
 ```bash
 npm start
-```
-
-or
-
-```bash
-ng serve
 ```
 
 ### 5. Open the Application

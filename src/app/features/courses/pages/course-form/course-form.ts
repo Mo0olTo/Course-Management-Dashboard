@@ -46,10 +46,12 @@ export class CourseForm implements OnInit {
     duration: this.fb.nonNullable.control(0, [
       Validators.required,
       Validators.min(1),
+      Validators.pattern(/^[0-9]+$/)
     ]),
     price: this.fb.nonNullable.control(0, [
       Validators.required,
       Validators.min(0),
+      Validators.pattern(/^[0-9]+$/),
     ]),
     status: this.fb.nonNullable.control('', [Validators.required]),
     description: this.fb.nonNullable.control('', [Validators.maxLength(500)]),
@@ -76,8 +78,8 @@ export class CourseForm implements OnInit {
         courseName: course.courseName,
         instructorName: course.instructorName,
         category: course.category,
-        duration: course.duration ??0,
-        price: course.price ?? 0,
+        duration: course.duration ??1,
+        price: course.price ??0,
         status: course.status,
         description: course.description ?? '',
       });
