@@ -158,17 +158,11 @@
             ></app-reusable-table>
 
 
-          @if (showConfirm()) {
-            <div class="w-full fixed flex justify-center items-center  inset-0 ">
-              <app-confirmation-dialog
-               [itemName]="selectedCourse()?.courseName ?? ''"
-              (confirm)="onConfirmDelete()"
-              (cancel)="onCancelDelete()"
-              ></app-confirmation-dialog>
-            </div>
-          }
+       
 
-        </div>
+        </div> 
+
+    
 
         <!-- Pagination footer -->
         @if (filteredCourses().length > 0) {
@@ -234,6 +228,16 @@
     }
   </div>
 
-
+  @if (showConfirm()) {
+    <div
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+    >
+      <app-confirmation-dialog
+        [itemName]="selectedCourse()?.courseName ?? ''"
+        (confirm)="onConfirmDelete()"
+        (cancel)="onCancelDelete()"
+      ></app-confirmation-dialog>
+    </div>
+  }
 
 </section>

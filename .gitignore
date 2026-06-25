@@ -18,7 +18,9 @@ yarn-error.log
 .c9/
 *.launch
 .settings/
-*.sublime-workspace
+*.sublime-workspace 
+#css Tailwind IntilleSense
+src/styles.css
 
 # Visual Studio Code
 .vscode/*

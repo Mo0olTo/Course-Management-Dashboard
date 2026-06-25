@@ -6,9 +6,11 @@ A modern, responsive **Course Management** single-page application built with **
 
 ## 📖 Short Description
 
-**Course Management — Electropi** is a CRUD application for managing a course catalog. Users can create, view, edit, delete, search, and filter courses. The application follows a feature-based Angular architecture and uses Angular Signals for reactive state management.
+**Course Management — Electropi** is a CRUD application for managing a course catalog.
+  Users can create, view, edit, delete, search, and filter courses.
+  The application follows a feature-based Angular architecture and uses Angular Signals for reactive state management.
 
-The project is designed to demonstrate modern Angular development practices, including standalone components, reactive forms, reusable UI components, route-based navigation, and a mock REST API.
+  The project is designed to demonstrate modern Angular development practices, including standalone components, reactive forms, reusable UI components, route-based navigation, and a mock REST API.
 
 ---
 
@@ -24,6 +26,7 @@ The project is designed to demonstrate modern Angular development practices, inc
 * PrimeNG
 * PrimeIcons
 * JSON Server (Mock API)
+* mockAPI 
 * Angular HttpClient
 * npm
 
@@ -92,6 +95,7 @@ src/
 ├── environments/
 ├── styles.scss
 ├── db.json
+├── sources.ts
 └── ...
 ```
 
@@ -154,13 +158,15 @@ https://6a3d25fcd8e212699e238312.mockapi.io/api/v1/courses
 
 ### Data Source
 
-All data is stored in mockAPI:
+All course data is managed through a Mock REST API hosted on MockAPI.io.
+
+API Endpoint:
 
 ```text
-sources.ts
+https://6a3d25fcd8e212699e238312.mockapi.io/api/v1/courses
 ```
 
-The mock server reads and writes directly to this file.
+The application performs CRUD operations through HTTP requests to this endpoint.
 
 ---
 
@@ -180,6 +186,7 @@ The mock server reads and writes directly to this file.
 * Reusable Form Components
 * Loading Skeleton
 * Toast Notifications
+* Guards for unsaved activity
 * Feature-Based Architecture
 * Angular Signals State Management
 * Typed Reactive Forms
@@ -208,7 +215,8 @@ The mock server reads and writes directly to this file.
 
 ### Confirmation Message
 
-![EConfirmation Message](/public/screenshots/confirmation-message.webp)
+![Confirmation delete Message](/public/screenshots/confirmation-message.webp)
+![Unsaved-work Message](/public/screenshots/unsaved-message.jpeg)
 
 
 ### Deploy Link
