@@ -145,13 +145,13 @@ The project uses **JSON Server** as a mock REST API.
 ### Base URL
 
 ```text
-http://localhost:3000
+https://6a3d25fcd8e212699e238312.mockapi.io/api/v1/courses
 ```
 
 ### Courses Endpoint
 
 ```text
-http://localhost:3000/courses
+https://6a3d25fcd8e212699e238312.mockapi.io/api/v1/courses
 ```
 
 ### Supported Operations
@@ -166,10 +166,10 @@ http://localhost:3000/courses
 
 ### Data Source
 
-All data is stored locally in:
+All data is stored in mockAPI:
 
 ```text
-db.json
+sources.ts
 ```
 
 The mock server reads and writes directly to this file.
@@ -178,7 +178,7 @@ The mock server reads and writes directly to this file.
 
 ## Assumptions
 
-* The application assumes that the mock API is running on `http://localhost:3000`.
+* The application assumes that the mock API is running on `https://6a3d25fcd8e212699e238312.mockapi.io/api/v1/courses`.
 * Course IDs are generated and managed by JSON Server.
 * Description is an optional field.
 * Only predefined course categories and statuses are supported.
@@ -223,6 +223,8 @@ The mock server reads and writes directly to this file.
 ![EConfirmation Message](/public/screenshots/confirmation-message.webp)
 
 
+### Deploy Link
+https://course-management-dashboard-v9cv.vercel.app/courses
 
 ## License
 
