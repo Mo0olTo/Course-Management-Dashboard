@@ -12,26 +12,6 @@
       "createdDate": "2024-04-21T14:40:56.679Z"
     },
     {
-      "id": "6",
-      "courseName": "Next.js Full Stack",
-      "instructorName": "Salma Adly",
-      "category": "Frontend",
-      "duration": 20,
-      "price": 99,
-      "status": "Archived",
-      "createdDate": "2025-05-01T00:14:58.671Z"
-    },
-    {
-      "id": "7",
-      "courseName": "JavaScript Essentials",
-      "instructorName": "Ahmed Ali",
-      "category": "Frontend",
-      "duration": 20,
-      "price": 99,
-      "status": "Draft",
-      "createdDate": "2024-09-14T06:46:38.786Z"
-    },
-    {
       "id": "8",
       "courseName": "Responsive Web Design",
       "instructorName": "Adel Magdy",
