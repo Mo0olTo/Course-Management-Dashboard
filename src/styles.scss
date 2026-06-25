@@ -1,19 +1,152 @@
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
 
+/* Tailwind v4: make `dark:` match `<html data-theme="dark">` */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* ─────────────────────────────────────────────────────────────
+   Theme base — light is default; dark overrides via [data-theme=dark]
+   ───────────────────────────────────────────────────────────── */
+
 html,
 body {
+  background-color: #f8fafc; /* slate-50 (light) */
+  color: #0f172a;            /* slate-900 */
+  color-scheme: light;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+[data-theme='dark'] html,
+[data-theme='dark'] body {
   background-color: #020617; /* slate-950 */
-  color: #e2e8f0; /* slate-200 */
+  color: #e2e8f0;            /* slate-200 */
   color-scheme: dark;
 }
 
+/* ─────────────────────────────────────────────────────────────
+   Ambient background orbs (soft, round, blurred, drifting)
+   ───────────────────────────────────────────────────────────── */
 
+.ambient-orbs {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  contain: strict;
+}
 
+/* Pseudo-element orbs — light defaults */
+.ambient-orbs::before,
+.ambient-orbs::after {
+  content: "";
+  position: absolute;
+  width: 36rem;
+  height: 36rem;
+  border-radius: 9999px;
+  filter: blur(120px);
+  will-change: transform;
+}
+
+.ambient-orbs::before {
+  top: -8rem;
+  left: -8rem;
+  opacity: 0.20;
+  background: radial-gradient(circle, #6366f1 0%, transparent 70%); /* indigo-500 */
+  animation: orb-drift-a 22s ease-in-out infinite;
+}
+
+.ambient-orbs::after {
+  bottom: -10rem;
+  right: -10rem;
+  opacity: 0.18;
+  background: radial-gradient(circle, #818cf8 0%, transparent 70%); /* indigo-400 */
+  animation: orb-drift-b 28s ease-in-out infinite;
+}
+
+/* Extra orb spans */
+.ambient-orbs > .orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  will-change: transform;
+  pointer-events: none;
+}
+
+.ambient-orbs > .orb-1 {
+  top: 28%;
+  left: 38%;
+  width: 28rem;
+  height: 28rem;
+  opacity: 0.18;
+  background: radial-gradient(circle, #93c5fd 0%, transparent 70%); /* blue-300 */
+  animation: orb-drift-c 26s ease-in-out infinite;
+}
+
+.ambient-orbs > .orb-2 {
+  top: 62%;
+  left: 8%;
+  width: 32rem;
+  height: 32rem;
+  opacity: 0.16;
+  background: radial-gradient(circle, #a5b4fc 0%, transparent 70%); /* indigo-300 */
+  animation: orb-drift-d 34s ease-in-out infinite;
+}
+
+/* Dark mode orbs — richer, more saturated */
+[data-theme='dark'] .ambient-orbs::before {
+  opacity: 0.35;
+  background: radial-gradient(circle, #1d4ed8 0%, transparent 70%); /* blue-700 */
+}
+
+[data-theme='dark'] .ambient-orbs::after {
+  opacity: 0.35;
+  background: radial-gradient(circle, #2563eb 0%, transparent 70%); /* blue-600 */
+}
+
+[data-theme='dark'] .ambient-orbs > .orb-1 {
+  opacity: 0.28;
+  background: radial-gradient(circle, #38bdf8 0%, transparent 70%); /* sky-400 */
+}
+
+[data-theme='dark'] .ambient-orbs > .orb-2 {
+  opacity: 0.22;
+  background: radial-gradient(circle, #6366f1 0%, transparent 70%); /* indigo-500 */
+}
+
+@keyframes orb-drift-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(8rem, 6rem) scale(1.1); }
+}
+
+@keyframes orb-drift-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(-10rem, -8rem) scale(1.15); }
+}
+
+@keyframes orb-drift-c {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(-12rem, 10rem) scale(1.2); }
+}
+
+@keyframes orb-drift-d {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(14rem, -6rem) scale(0.9); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-orbs::before,
+  .ambient-orbs::after,
+  .ambient-orbs > .orb { animation: none; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Motion utilities
+   ───────────────────────────────────────────────────────────── */
 
 /* Page entrance — fade + slide up */
 .page-enter {
-  animation: page-enter 1480ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: page-enter 480ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @keyframes page-enter {
@@ -21,7 +154,7 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Card lift on hover with a soft blue glow */
+/* Card lift on hover with a soft blue/indigo glow */
 .lift-card {
   transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
   will-change: transform;
@@ -29,9 +162,16 @@ body {
 
 .lift-card:hover {
   transform: translateY(-2px);
+  border-color: rgb(99 102 241 / 0.45); /* indigo-500/45 (light) */
+  box-shadow:
+    0 10px 30px -10px rgb(99 102 241 / 0.30),
+    0 0 0 1px rgb(99 102 241 / 0.10);
+}
+
+[data-theme='dark'] .lift-card:hover {
   border-color: rgb(59 130 246 / 0.45); /* blue-500/45 */
   box-shadow:
-    0 10px 30px -10px rgb(30 64 175 / 0.45),  /* blue-800 glow */
+    0 10px 30px -10px rgb(30 64 175 / 0.45),
     0 0 0 1px rgb(59 130 246 / 0.10);
 }
 
@@ -43,17 +183,25 @@ body {
 
 .btn-press:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 20px -8px rgb(37 99 235 / 0.6); /* blue-600 */
+  box-shadow: 0 8px 20px -8px rgb(99 102 241 / 0.6); /* indigo-500 (light) */
+}
+
+[data-theme='dark'] .btn-press:hover {
+  box-shadow: 0 8px 20px -8px rgb(37 99 235 / 0.6); /* blue-600 (dark) */
 }
 
 .btn-press:active {
   transform: translateY(0) scale(0.98);
 }
 
-/* Skeleton shimmer for loading placeholders */
+/* Skeleton shimmer — light vs dark */
 .shimmer {
   position: relative;
   overflow: hidden;
+  background: rgb(226 232 240 / 1); /* slate-200 (light) */
+}
+
+[data-theme='dark'] .shimmer {
   background: rgb(30 41 59 / 1); /* slate-800 */
 }
 
@@ -64,13 +212,24 @@ body {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgb(51 65 85 / 0.6) 40%,    /* slate-700 */
-    rgb(71 85 105 / 0.8) 50%,   /* slate-600 */
-    rgb(51 65 85 / 0.6) 60%,
+    rgb(241 245 249 / 0.9) 40%,    /* slate-100 (light) */
+    rgb(248 250 252 / 1)   50%,
+    rgb(241 245 249 / 0.9) 60%,
     transparent 100%
   );
   transform: translateX(-100%);
   animation: shimmer 1.6s infinite;
+}
+
+[data-theme='dark'] .shimmer::after {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgb(51 65 85 / 0.6) 40%,
+    rgb(71 85 105 / 0.8) 50%,
+    rgb(51 65 85 / 0.6) 60%,
+    transparent 100%
+  );
 }
 
 @keyframes shimmer {
@@ -78,7 +237,7 @@ body {
   100% { transform: translateX(100%); }
 }
 
-/* Status dot pulse — small ring breathing outward */
+/* Status dot pulse — uses currentColor so it adapts to text color */
 .status-pulse {
   position: relative;
 }

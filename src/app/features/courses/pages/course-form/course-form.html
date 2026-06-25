@@ -1,8 +1,15 @@
-<section class="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950/40 px-4 py-8 sm:px-6 lg:px-10 ">
+<section class="relative min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50/40 px-4 py-8 sm:px-6 lg:px-10
+                dark:from-slate-950 dark:via-slate-900 dark:to-blue-950/40">
   <div class="ambient-orbs" aria-hidden="true">
     <span class="orb orb-1"></span>
     <span class="orb orb-2"></span>
   </div>
+
+  <!-- Theme toggle in top-right corner -->
+  <div class="absolute right-4 top-4 z-10 sm:right-6 lg:right-10">
+    <app-theme-toggle />
+  </div>
+
   @if (loading()) {
     <div class="page-enter mx-auto max-w-4xl w-full">
      <app-loading
@@ -15,43 +22,45 @@
 
          <!-- Header -->
          <div class="mb-8">
-           <h1 class="text-3xl font-bold text-slate-100">
+           <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">
              {{ isEdit() ? 'Edit Course' : 'Add New Course' }}
            </h1>
-           <p class="mt-2 text-sm text-slate-400">
+           <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
              {{ isEdit() ? 'Update the details of this course.' : 'Create a new course and add it to the catalog.' }}
            </p>
          </div>
 
          <!-- Form Card -->
-         <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+         <div class="lift-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm
+                     dark:border-slate-800 dark:bg-slate-900">
            <form [formGroup]="courseForm" (ngSubmit)="submit()">
 
              <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
 
                <!-- Course Name -->
                <div>
-                 <label class="mb-2 block text-sm font-medium text-slate-300">
+                 <label class="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
                    Course Name *
                  </label>
 
                  <input
                    type="text"
                    formControlName="courseName"
-                   class="w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-2.5 text-slate-100 placeholder:text-slate-500 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+                   class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100
+                          dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-blue-500 dark:focus:ring-blue-500/30"
                    placeholder="Angular Fundamentals"
                  />
 
                  @if(courseForm.controls.courseName.touched &&
                  courseForm.controls.courseName.errors?.['required']){
-                   <p class="mt-1 text-sm text-red-400">
+                   <p class="mt-1 text-sm text-red-500 dark:text-red-400">
                      Course name is required.
                    </p>
                  }
 
                  @if(courseForm.controls.courseName.touched &&
                  courseForm.controls.courseName.errors?.['minlength']){
-                   <p class="mt-1 text-sm text-red-400">
+                   <p class="mt-1 text-sm text-red-500 dark:text-red-400">
                      Minimum 3 characters required.
                    </p>
                  }
@@ -59,20 +68,21 @@
 
                <!-- Instructor -->
                <div>
-                 <label class="mb-2 block text-sm font-medium text-slate-300">
+                 <label class="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
                    Instructor Name *
                  </label>
 
                  <input
                    type="text"
                    formControlName="instructorName"
-                   class="w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-2.5 text-slate-100 placeholder:text-slate-500 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+                   class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100
+                          dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-blue-500 dark:focus:ring-blue-500/30"
                    placeholder="Ahmed Ali"
                  />
 
                  @if(courseForm.controls.instructorName.touched &&
                  courseForm.controls.instructorName.errors?.['required']){
-                   <p class="mt-1 text-sm text-red-400">
+                   <p class="mt-1 text-sm text-red-500 dark:text-red-400">
                      Instructor name is required.
                    </p>
                  }
@@ -80,32 +90,33 @@
 
                <!-- Category -->
                <div>
-                 <label class="mb-2 block text-sm font-medium text-slate-300">
+                 <label class="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
                    Category *
                  </label>
 
                  <select
                    formControlName="category"
-                   class="w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-2.5 text-slate-100 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+                   class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100
+                          dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:focus:border-blue-500 dark:focus:ring-blue-500/30"
                  >
-                   <option class="bg-slate-900 text-slate-300" value="">Select Category</option>
-                   <option class="bg-slate-900 text-slate-300" value="Frontend">Frontend</option>
-                   <option class="bg-slate-900 text-slate-300" value="Backend">Backend</option>
-                   <option class="bg-slate-900 text-slate-300" value="Design">Design</option>
-                   <option class="bg-slate-900 text-slate-300" value="Mobile">Mobile</option>
-                   <option class="bg-slate-900 text-slate-300" value="Machine Learning">Machine Learning</option>
-                   <option class="bg-slate-900 text-slate-300" value="Data Analysis">Data Analysis</option>
-                   <option class="bg-slate-900 text-slate-300" value="DevOps">DevOps</option>
-                   <option class="bg-slate-900 text-slate-300" value="Cloud Computing">Cloud Computing</option>
-                   <option class="bg-slate-900 text-slate-300" value="Cybersecurity">Cybersecurity</option>
-                   <option class="bg-slate-900 text-slate-300" value="Software Testing">Software Testing</option>
-                   <option class="bg-slate-900 text-slate-300" value="Blockchain">Blockchain</option>
-                   <option class="bg-slate-900 text-slate-300" value="Game Development">Game Development</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="">Select Category</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Frontend">Frontend</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Backend">Backend</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Design">Design</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Mobile">Mobile</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Machine Learning">Machine Learning</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Data Analysis">Data Analysis</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="DevOps">DevOps</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Cloud Computing">Cloud Computing</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Cybersecurity">Cybersecurity</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Software Testing">Software Testing</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Blockchain">Blockchain</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Game Development">Game Development</option>
                  </select>
 
                  @if(courseForm.controls.category.touched &&
                  courseForm.controls.category.errors?.['required']){
-                   <p class="mt-1 text-sm text-red-400">
+                   <p class="mt-1 text-sm text-red-500 dark:text-red-400">
                      Category is required.
                    </p>
                  }
@@ -113,24 +124,25 @@
 
                <!-- Status -->
                <div>
-                 <label class="mb-2 block text-sm font-medium text-slate-300">
+                 <label class="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
                    Status *
                  </label>
 
                  <select
                    formControlName="status"
-                   class="w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-2.5 text-slate-100 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+                   class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100
+                          dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:focus:border-blue-500 dark:focus:ring-blue-500/30"
                  >
-                   <option class="bg-slate-900 text-slate-300" value="">Select Status</option>
-                   <option class="bg-slate-900 text-slate-300" value="Active">Active</option>
-                   <option class="bg-slate-900 text-slate-300" value="Draft">Draft</option>
-                   <option class="bg-slate-900 text-slate-300" value="Archived">Archived</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="">Select Status</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Active">Active</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Draft">Draft</option>
+                   <option class="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300" value="Archived">Archived</option>
                  </select>
                </div>
 
                <!-- Duration -->
                <div>
-                 <label class="mb-2 block text-sm font-medium text-slate-300">
+                 <label class="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
                    Duration (Hours) *
                  </label>
 
@@ -138,18 +150,19 @@
                    type="number"
                    formControlName="duration"
                    min="1"
-                   class="w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-2.5 text-slate-100 placeholder:text-slate-500 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+                   class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100
+                          dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-blue-500 dark:focus:ring-blue-500/30"
                  />
 
                  @if(courseForm.controls.duration.touched &&
                  courseForm.controls.duration.errors?.['required']){
-                   <p class="mt-1 text-sm text-red-400">
+                   <p class="mt-1 text-sm text-red-500 dark:text-red-400">
                      Duration is required.
                    </p>
                  }
                  @if(courseForm.controls.duration.touched &&
                       courseForm.controls.duration.errors?.['min']){
-                    <p class="mt-1 text-sm text-red-400">
+                    <p class="mt-1 text-sm text-red-500 dark:text-red-400">
                       Duration must be greater than 0.
                     </p>
                   }
@@ -157,7 +170,7 @@
 
                <!-- Price -->
                <div>
-                 <label class="mb-2 block text-sm font-medium text-slate-300">
+                 <label class="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
                    Price *
                  </label>
 
@@ -165,18 +178,19 @@
                    type="number"
                    formControlName="price"
                    min="0"
-                   class="w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-2.5 text-slate-100 placeholder:text-slate-500 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+                   class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100
+                          dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-blue-500 dark:focus:ring-blue-500/30"
                  />
 
                  @if(courseForm.controls.price.touched &&
                     courseForm.controls.price.errors?.['required']){
-                      <p class="mt-1 text-sm text-red-400">
+                      <p class="mt-1 text-sm text-red-500 dark:text-red-400">
                         Price is required.
                       </p>
                     }
                  @if(courseForm.controls.price.touched &&
                         courseForm.controls.price.errors?.['min']){
-                      <p class="mt-1 text-sm text-red-400">
+                      <p class="mt-1 text-sm text-red-500 dark:text-red-400">
                         Price cannot be negative.
                       </p>
                     }
@@ -186,18 +200,19 @@
 
              <!-- Description -->
              <div class="mt-6">
-               <label class="mb-2 block text-sm font-medium text-slate-300">
+               <label class="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
                  Description
                </label>
 
                <textarea
                  rows="5"
                  formControlName="description"
-                 class="w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-3 text-slate-100 placeholder:text-slate-500 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+                 class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100
+                        dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-blue-500 dark:focus:ring-blue-500/30"
                  placeholder="Course description..."
                ></textarea>
 
-               <p class="mt-1 text-xs text-slate-500">
+               <p class="mt-1 text-xs text-slate-400 dark:text-slate-500">
                  Maximum 500 characters
                </p>
              </div>
@@ -206,14 +221,16 @@
              <div class="mt-8 flex justify-end gap-3">
                <button (click)="onCancel()"
                  type="button"
-                 class="btn-press rounded-lg border border-slate-700 px-5 py-2.5 font-medium text-slate-200 hover:bg-slate-800"
+                 class="btn-press rounded-lg border border-slate-300 px-5 py-2.5 font-medium text-slate-700 hover:bg-slate-50
+                        dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
                >
                  Cancel
                </button>
 
                <button
                  type="submit"
-                 class="btn-press rounded-lg bg-blue-600 px-5 py-2.5 font-medium text-white hover:bg-blue-500"
+                 class="btn-press rounded-lg bg-indigo-600 px-5 py-2.5 font-medium text-white hover:bg-indigo-700
+                        dark:bg-blue-600 dark:hover:bg-blue-500"
                >
                  {{ isEdit() ? 'Update Course' : 'Create Course' }}
                </button>

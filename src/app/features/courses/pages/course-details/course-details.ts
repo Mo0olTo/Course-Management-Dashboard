@@ -4,10 +4,11 @@ import { DecimalPipe, DatePipe } from '@angular/common';
 import { CoursesFacade } from '../../facade/courses.facade';
 import { badgeClass, categoryColor } from '../../../../shared/utils/table-style.utils';
 import { Loading } from "../../../../shared/components/loading/loading";
+import { ThemeToggle } from "../../../../shared/components/theme-toggle/theme-toggle";
 
 @Component({
   selector: 'app-course-details',
-  imports: [DecimalPipe, DatePipe, Loading],
+  imports: [DecimalPipe, DatePipe, Loading, ThemeToggle],
   templateUrl: './course-details.html',
   styleUrl: './course-details.scss',
 })

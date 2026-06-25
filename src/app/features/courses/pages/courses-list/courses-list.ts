@@ -1,5 +1,5 @@
 import { Component, computed, inject, OnInit, signal } from '@angular/core';
-import { DatePipe, DecimalPipe, TitleCasePipe } from '@angular/common';
+import { DecimalPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CoursesFacade } from '../../facade/courses.facade';
 import { CourseStatus } from '../../../../shared/enums/courses.status';
@@ -11,10 +11,11 @@ import { ColumnType } from '../../../../shared/enums/column.type';
 import { Loading } from "../../../../shared/components/loading/loading";
 import { Course } from '../../models/course';
 import { Error } from "../../../../shared/components/error/error";
+import { ThemeToggle } from "../../../../shared/components/theme-toggle/theme-toggle";
 
 @Component({
   selector: 'app-courses-list',
-  imports: [DatePipe, DecimalPipe, TitleCasePipe, FormsModule, ConfirmationDialog, ReusableTable, Loading, Error],
+  imports: [DecimalPipe, FormsModule, ConfirmationDialog, ReusableTable, Loading, Error, ThemeToggle],
   templateUrl: './courses-list.html',
   styleUrl: './courses-list.scss',
 })

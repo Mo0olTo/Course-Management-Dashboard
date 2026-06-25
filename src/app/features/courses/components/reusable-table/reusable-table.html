@@ -1,32 +1,33 @@
-<div class="overflow-hidden  rounded-b-2xl border border-slate-800 bg-slate-900 shadow-sm">
+<div class="overflow-hidden rounded-b-2xl border border-slate-200 bg-white shadow-sm
+            dark:border-slate-800 dark:bg-slate-900">
     <div class="overflow-x-auto">
-        <table class="min-w-full divide-y divide-slate-800">
+        <table class="min-w-full divide-y divide-slate-200 dark:divide-slate-800">
 
-            <thead class="bg-slate-900/70">
+            <thead class="bg-slate-50 dark:bg-slate-900/70">
               <tr>
 
                 @for (column of columns(); track column.key) {
                   <th
-                    class="px-5 py-3 text-left text-xs md:text-[16px] font-semibold uppercase text-slate-300"
+                    class="px-5 py-3 text-left text-xs md:text-[16px] font-semibold uppercase text-slate-600 dark:text-slate-300"
                   >
                     {{ column.header }}
                   </th>
                 }
 
-                <th class="px-5 py-3 text-left text-xs md:text-[16px] font-semibold uppercase text-slate-300">Actions</th>
+                <th class="px-5 py-3 text-left text-xs md:text-[16px] font-semibold uppercase text-slate-600 dark:text-slate-300">Actions</th>
 
               </tr>
             </thead>
 
-            <tbody class="divide-y divide-slate-800">
+            <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
 
               @for (row of data(); track row.id) {
 
-                <tr class="hover:bg-slate-800/40 transition-colors ">
+                <tr class="transition-colors hover:bg-slate-50/60 dark:hover:bg-slate-800/40">
 
                   @for (column of columns(); track column.key) {
 
-                    <td class="px-5 py-4 ">
+                    <td class="px-5 py-4">
                         @switch (column.type) {
 
                             @case ('status') {
@@ -52,7 +53,7 @@
                             }
                             @case ('date') {
 
-                              <span class="text-sm text-slate-300">
+                              <span class="text-sm text-slate-700 dark:text-slate-300">
                                 {{ row[column.key] | date:'dd/MM/yyyy' }}
                               </span>
 
@@ -60,20 +61,20 @@
 
                             @case ('price') {
 
-                              <span class="text-sm text-slate-200">${{ row[column.key] }}</span>
+                              <span class="text-sm text-slate-800 dark:text-slate-200">${{ row[column.key] }}</span>
 
                             }
 
                             @case ('duration') {
 
-                              <span class="text-sm text-slate-200">{{ row[column.key] }}h</span>
+                              <span class="text-sm text-slate-800 dark:text-slate-200">{{ row[column.key] }}h</span>
 
                             }
 
                             @default {
 
                               <span
-                              class="text-sm md:text-[15px] font-medium whitespace-nowrap text-slate-100"
+                              class="text-sm md:text-[15px] font-medium whitespace-nowrap text-slate-900 dark:text-slate-100"
                             >
                               {{ row[column.key] }}
                             </span>
@@ -85,24 +86,26 @@
 
                   }
 
-                  <td class="px-5 py-4  gap-2">
+                  <td class="px-5 py-4">
 
                       <div class="flex justify-center items-center gap-2">
-                        <button class="btn-press bg-slate-700 hover:bg-slate-600 px-2 py-1 rounded-xl text-white cursor-pointer text-sm"
+                        <button class="btn-press rounded-xl px-2 py-1 text-sm text-white cursor-pointer bg-slate-500 hover:bg-slate-600
+                                       dark:bg-slate-700 dark:hover:bg-slate-600"
                         (click)="view.emit(row.id)"
 
                       >
                         View
                       </button>
 
-                      <button class="btn-press bg-blue-600 hover:bg-blue-500 px-2 py-1 rounded-xl text-white cursor-pointer text-sm"
+                      <button class="btn-press rounded-xl px-2 py-1 text-sm text-white cursor-pointer bg-indigo-600 hover:bg-indigo-700
+                                     dark:bg-blue-600 dark:hover:bg-blue-500"
                         (click)="edit.emit(row.id)"
 
                       >
                         Edit
                       </button>
 
-                      <button class="btn-press bg-red-600 hover:bg-red-500 px-2 py-1 rounded-xl text-white cursor-pointer text-sm"
+                      <button class="btn-press rounded-xl px-2 py-1 text-sm text-white cursor-pointer bg-red-600 hover:bg-red-700"
                         (click)="delete.emit(row.id)"
                       >
                         Delete

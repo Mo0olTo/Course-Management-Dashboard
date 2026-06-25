@@ -7,6 +7,7 @@ import { Course } from '../../models/course';
 import { CourseCategory } from '../../../../shared/enums/course.category';
 import { CourseStatus } from '../../../../shared/enums/courses.status';
 import { Loading } from "../../../../shared/components/loading/loading";
+import { ThemeToggle } from "../../../../shared/components/theme-toggle/theme-toggle";
 
 type CourseFormControls = {
   courseName: FormControl<string>;
@@ -20,7 +21,7 @@ type CourseFormControls = {
 
 @Component({
   selector: 'app-course-form',
-  imports: [ReactiveFormsModule, Loading],
+  imports: [ReactiveFormsModule, Loading, ThemeToggle],
   templateUrl: './course-form.html',
   styleUrl: './course-form.scss',
 })
