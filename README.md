@@ -102,8 +102,8 @@ src/
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone "https://github.com/Mo0olTo/Course-Management-Dashboard"
+cd Course-Management-Dashboard
 ```
 
 ### 2. Install Dependencies
@@ -186,19 +186,6 @@ The mock server reads and writes directly to this file.
 
 ---
 
-## Bonus Features
-
-* Reusable Table Component
-* Reusable Form Components
-* Route Guards
-* Loading Skeleton
-* Toast Notifications
-* Feature-Based Architecture
-* Angular Signals State Management
-* Typed Reactive Forms
-* Responsive UI Design
-
----
 
 ## 📸 Screenshots
 
