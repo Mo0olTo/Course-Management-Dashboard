@@ -119,13 +119,13 @@ export class CoursesList implements OnInit {
     const page = Math.min(this.currentPage(), this.totalPages());
     const start = (page - 1) * this.pageSize;
   
-    return this.filteredCourses()
-      .slice(start, start + this.pageSize)
-      .sort(
-        (a, b) =>
-          new Date(b.createdDate).getTime() -
-          new Date(a.createdDate).getTime()
-      );
+    const sortedCourses = [...this.filteredCourses()].sort(
+      (a, b) =>
+        new Date(b.createdDate).getTime() -
+        new Date(a.createdDate).getTime()
+    );
+  
+    return sortedCourses.slice(start, start + this.pageSize);
   });
 
   // Visible page numbers with ellipsis for large page counts
