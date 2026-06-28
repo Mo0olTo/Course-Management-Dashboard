@@ -220,7 +220,7 @@ The application performs CRUD operations through HTTP requests to this endpoint.
 
 
 ### Deploy Link
-https://course-management-dashboard-v9cv.vercel.app/courses
+https://course-management-dashboard-psi.vercel.app/courses
 
 ## License
 
